@@ -1,0 +1,207 @@
+<!-- http://demo.geekslabs.com/materialize/v3.1/ui-alerts.html -->
+<!-- http://www.highcharts.com/ -->
+<!-- material design: https://material.io/guidelines/material-design/introduction.html -->
+<!-- cd "Google Drive"/"Algora Finance"/Code/"Web Development"/AF_Website -->
+<!-- highcharts video tutorial: https://www.youtube.com/watch?v=FchJYk0OF2U -->
+<!-- clean blog example: https://blackrockdigital.github.io/startbootstrap-clean-blog/post.html -->
+<!-- parallax example: http://pixelcog.github.io/parallax.js/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="shortcut icon" href="images/shortcut_icon.png" type="image/png">
+  <title>Algora Finance</title>
+
+  <!-- CSS  -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+
+</head>
+<body class = "all-style">
+
+  <!-- header stays the same between all .html pages -->
+  <header class="l-header" role="banner">
+    <nav class="header-color all-style" role="navigation">
+      <div class="nav-wrapper container">
+        <!-- logo-container -->
+        <a id="logo-container" href="index.html" class="brand-logo left">
+        <img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
+        <ul class="right hide-on-med-and-down">
+          <!-- news_nav -->
+          <li class="tooltip newstip" data-title="News" id="news_nav"><a href="about_us.html"><i class="material-icons">trending_up</i></a></li>
+          <!-- blog_nav -->
+          <li class="tooltip blogtip" data-title="Blog" id="blog_nav"><a href="blog.html"><i class="material-icons">forum</i></a></li>
+          <!-- about_nav -->
+          <li class="tooltip abouttip" data-title="About" id="about_nav"><a href="about_us.html"><img id="algora-logo" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20"></a></li>
+          <!-- account_nav -->
+          <li class="tooltip communitytip" data-title="Community" id="account_nav"><a href="account_login.html"><i class="material-icons">group</i></a></li>
+        </ul>
+
+
+        <!-- nav-mobile side-nav for mobile devices -->
+        <ul id="nav-mobile" class="side-nav">
+          <!-- about_nav -->
+          <li id="about_nav"><a href="about_us.html">News<i class="material-icons left trending_up">trending_up</i></a></li>
+          <!-- blog_nav -->
+          <li id="blog_nav"><a href="blog.html">Blog<i class="material-icons left">forum</i></a></li>
+          <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
+          <!-- account_nav -->
+          <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">person</i></a></li>
+        </ul>
+
+        <a href="#" id="menu_nav" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div id="header-achievements">
+      <h5 class="center"><font size="50">VISIONARY ACHIEVEMENTS</font></h5>
+      <p class="center"><font size="6">Our key achievements</font></p>
+    </div>
+  </div>
+
+  <div class="js-chart">
+    <div class="ct-chart ct-perfect-fourth" style="min-width: 310px; height:400px; margin: 0 auto;"></div>
+  </div>
+  
+  <hr class="div-ext">
+
+  <div class="container block-container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <a href="#">
+            <div class="icon-block info-container">
+              
+              <!-- material-icons link: https://material.io/icons/ -->
+              <h2 class="center green-text"><i class="material-icons">trending_up</i></h2>
+              <h5 class="center">Steady Returns</h5>
+
+              <p class="light center">While many investors fail to stay consistent in their strategy leading to poor performance, our systematic approach yields consistently stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and finally deploying new strategies to sustain this performance in the long term.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m4">
+          <a href="#">
+            <div class="icon-block info-container">
+              <h2 class="center blue-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Community</h5>
+
+              <p class="light center">We believe that collaboration leads to outstanding performance, so we work directly with members our community to theorize, create and test cutting-edge investment strategies. We yearn to create a culture centered around learning and curiosity to achieve this goal.</p>
+            </div>
+          </a>
+        </div>
+
+        
+
+        <div class="col s12 m4">
+          <a href="#">
+            <div class="icon-block info-container">
+              <h2 class="center black-text"><i class="material-icons">code</i></h2>
+              <h5 class="center">Algo Trading</h5>
+
+              <p class="light center">Automation has fundamentally changed the landscape of investing, so we’ve invested time and money into developing and implementing state-of-the-art algo-trading systems. We are constantly researching unique approaches to add to our successful portfolio of strategies.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A cutting-edge way to invest in your future</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/stockchart_background.jpg" alt="Stock chart parallax"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/wall_street.jpg" alt="Wall street parallax"></div>
+  </div>
+
+
+  <!-- footer contains social media and copyright -->
+  <footer class="page-footer blue lighten-1">
+    <!-- social media links -->
+    <div class="col l12 s4 center">
+      <ul class="list-inline">
+        <li><a href="account_login.html"><img src="images/facebook_img.png" alt="Facebook logo" width="48" height="48"></a></li>
+        <li><a href="account_login.html"><img id="twitter-logo" src="images/twitter_img.png" alt="Twitter logo" width="30" height="30"></a></li>
+        <li><a href="account_login.html"><img src="images/instagram_img.png" alt="Instagram logo" width="48" height="48"></a></li>
+      </ul>
+    </div>
+    <!-- copyright info: 
+    https://www.legalzoom.com/articles/do-i-need-to-copyright-my-website 
+    http://www.kristofcreative.com/articles/branding/how-to-copyright-website-six-easy-steps/ -->
+    <div class="footer-copyright">
+      <div class="container center">
+        Copyright © 2017 Algora Finance. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="charts.js"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> -->
+
+
+  </body>
+</html>

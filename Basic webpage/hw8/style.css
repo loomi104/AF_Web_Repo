@@ -1,0 +1,232 @@
+/*Table Styling */
+body{
+    background-color: #D3D3D3;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+}
+
+table.calender,th,td {
+    border : 1px solid black; 
+    border-collapse: collapse;
+}
+table.calender{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+}
+td{
+    width: 150px;
+    text-align: center;
+}
+th{
+    width: 120px;
+    background-color: #FFDA33;
+    color:maroon;
+}
+tr:nth-child(odd){
+    background-color : maroon;
+    color: gold;
+}
+tr:nth-child(even){
+    background-color : #FFDA33;
+    color: maroon;
+}
+
+table.pictures{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    border: none;
+    padding:0;
+    bottom:0;
+}
+
+td.pictures{
+    width:33%;
+    height:200px;
+    border : none;
+    color: black;
+    padding:0;
+}
+
+table.adWrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    background-color:#D3D3D3;
+    border: none;
+    padding:0;
+    bottom:0;
+    height:295px;
+    width:800px;
+}
+td.buttons{
+    width:50px;
+    background-color:#D3D3D3;
+    border:none;
+}
+td.ad{
+    width:auto;
+    background-color:#D3D3D3;
+    border:none;
+}
+
+table.slideButtons{
+    margin-left:auto;
+    margin-right:auto;
+    width:80px;
+    background-color:#D3D3D3;
+    border: none;
+    padding:0;
+    bottom:0;
+}
+td.slideButtons{
+    background-color:#D3D3D3;
+    border:none;
+    height:20px;
+    width:20px;
+}
+tr.pictures:nth-child(odd){
+    background-color : #D3D3D3;
+    border: none;
+    padding:0;
+}
+img{
+    width:100%;
+    height:100%;
+}
+/*Div styling for form*/
+div.header{
+    padding: 15px;
+    color : gold;
+    background-color: maroon;
+    text-align: center;
+    
+}
+
+div.footer{
+    padding: 10px;
+    color : #FFDA33;
+    background-color: maroon;
+    text-align: center;
+    
+}
+div.formbox{
+    width: 35%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: maroon;
+    color:gold;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div.right{
+    margin-right:auto;
+    width:25%;
+    background-color: maroon;
+    color:gold;
+}
+
+div.adWrapper{
+    display: inline;
+    white-space:nowrap;
+}
+
+
+div.ad{
+    width:80%;
+}
+
+div.bButton{
+    height:50px;
+    width:50px;
+}
+div.nButton{
+    height:50px;
+    width:50px;
+}
+
+div.tImg{
+    height:100px;
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    visibility:hidden;
+}
+
+input{
+    width: 90%;
+}
+input[type=button],input[type=submit],input[type=reset]{
+    width: 49%;
+    color:gold;
+    background-color:maroon;
+}
+
+/*div for times*/
+div.time{
+    font-weight:bold;
+    font-style:italic;
+}
+
+/*Text styling*/
+span{
+    font-size : 120%;
+    color: black;
+}
+nav{
+    background-color: #FFDA33;
+    font-size: 150%;
+    /*padding: 15px;*/
+    width : 30%;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1,nav,p{
+    text-align:center;
+}
+
+/* animation styling */
+div.coverLeft{
+    width:100%;
+    background-color:#D3D3D3;
+    overflow:hidden;
+}
+
+div.missingFields{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    color:red;
+    text-align:center;
+}
+div.scroll{
+    width: 10%;
+    position:relative;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+    white-space: nowrap;
+    transition-delay:3s;
+    animation-timing-function:linear;
+    color:black;
+    margin-left:5%;
+    margin-right:5%;
+}
+@keyframes scroll{
+    0%{color:black;left:200%;}
+    26.25%{color:black;left:95%;}
+    48.75%{color:black;left:5%;}
+    100%{color:black;left:-200%;}
+}
+
+/* map styling */
+
+#map{
+    height:400px;
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
