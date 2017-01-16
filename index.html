@@ -1,16 +1,21 @@
 <!-- http://demo.geekslabs.com/materialize/v3.1/ui-alerts.html -->
 <!-- http://www.highcharts.com/ -->
 <!-- material design: https://material.io/guidelines/material-design/introduction.html -->
-<!-- cd "Google Drive"/"Algora Finance"/Code/"Web Development"/AF_Website -->
+<!-- cd "Google Drive"/"Algora Finance"/Code/"Web Development"/AF_Web_Repo -->
 <!-- highcharts video tutorial: https://www.youtube.com/watch?v=FchJYk0OF2U -->
 <!-- clean blog example: https://blackrockdigital.github.io/startbootstrap-clean-blog/post.html -->
 <!-- parallax example: http://pixelcog.github.io/parallax.js/ -->
+<!-- Antimated tooltips with html and css: http://codepen.io/runnabro/pen/imeHn/ -->
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+  <!-- Loads shortcut icon and website title -->
   <link rel="shortcut icon" href="images/shortcut_icon.png" type="image/png">
   <title>Algora Finance</title>
 
@@ -24,45 +29,62 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
+  <!-- CSS/JS --> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
-
 </head>
+
+<!-- Applies all-style class tag to all body items --> 
 <body class = "all-style">
 
   <!-- header stays the same between all .html pages -->
   <header class="l-header" role="banner">
     <nav class="header-color all-style" role="navigation">
       <div class="nav-wrapper container">
-        <!-- logo-container -->
-        <a id="logo-container" href="index.html" class="brand-logo left">
-        <img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
+
+        <!-- Algora logo applies for both mobile and desktop viewing --> 
+        <a id="logo-container" href="index.html" class="brand-logo left"><img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
+
+        <!-- logo-container for full-page desktop viewing. Includes tooltips when hovering -->
         <ul class="right hide-on-med-and-down">
-          <!-- news_nav -->
+
+          <!-- Adding these pages later on:
+          news_nav
           <li class="tooltip newstip" data-title="News" id="news_nav"><a href="about_us.html"><i class="material-icons">trending_up</i></a></li>
+          account_nav
+          <li class="tooltip communitytip" data-title="Community" id="account_nav"><a href="account_login.html"><i class="material-icons">group</i></a></li>
+          -->
+
           <!-- blog_nav -->
           <li class="tooltip blogtip" data-title="Blog" id="blog_nav"><a href="blog.html"><i class="material-icons">forum</i></a></li>
           <!-- about_nav -->
           <li class="tooltip abouttip" data-title="About" id="about_nav"><a href="about_us.html"><img id="algora-logo" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20"></a></li>
-          <!-- account_nav -->
-          <li class="tooltip communitytip" data-title="Community" id="account_nav"><a href="account_login.html"><i class="material-icons">group</i></a></li>
+          
         </ul>
-
 
         <!-- nav-mobile side-nav for mobile devices -->
         <ul id="nav-mobile" class="side-nav">
-          <!-- about_nav -->
+          
+          <!-- Adding these pages later on:
+          about_nav
           <li id="about_nav"><a href="about_us.html">News<i class="material-icons left trending_up">trending_up</i></a></li>
+          account_nav
+          <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">group</i></a></li> 
+          -->
+
+          <!-- home_nav for menu popout -->
+          <li id="home_nav"><a href="index.html">Home<i class="material-icons left">home</i></a></li>
           <!-- blog_nav -->
           <li id="blog_nav"><a href="blog.html">Blog<i class="material-icons left">forum</i></a></li>
-          <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
-          <!-- account_nav -->
-          <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">person</i></a></li>
+          <!-- about_nav --> 
+          <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_blue.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
+
         </ul>
 
+        <!-- Mobile menu_nav --> 
         <a href="#" id="menu_nav" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+
       </div>
     </nav>
   </header>
@@ -82,10 +104,11 @@
 
   <div class="container block-container">
     <div class="section">
-
+      
+    
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s4">
           <a href="#">
             <div class="icon-block info-container">
               
@@ -93,12 +116,12 @@
               <h2 class="center green-text"><i class="material-icons">trending_up</i></h2>
               <h5 class="center">Steady Returns</h5>
 
-              <p class="light center">While many investors fail to stay consistent in their strategy leading to poor performance, our systematic approach yields consistently stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and finally deploying new strategies to sustain this performance in the long term.</p>
+              <p class="light center">While many investors fail to stay consistent in their strategy, our approach yields consistent, stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and finally deploying new strategies to sustain this performance in the long term.</p>
             </div>
           </a>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center blue-text"><i class="material-icons">group</i></h2>
@@ -109,9 +132,7 @@
           </a>
         </div>
 
-        
-
-        <div class="col s12 m4">
+        <div class="col s4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center black-text"><i class="material-icons">code</i></h2>
@@ -121,18 +142,16 @@
             </div>
           </a>
         </div>
+        
       </div>
-
     </div>
   </div>
 
-
+  
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A cutting-edge way to invest in your future</h5>
-        </div>
+      <div class="row center">
+        <h5 class="header col s12" style="font-size:50px;" >Invest in your future</h5>
       </div>
     </div>
     <div class="parallax"><img src="images/stockchart_background.jpg" alt="Stock chart parallax"></div>
@@ -143,7 +162,6 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
           <p class="left-align light">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
         </div>
@@ -155,10 +173,8 @@
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
+      <div class="row center">
+        <h5 class="header col s12" style="font-size:50px;">Learn through collaboration</h5>
       </div>
     </div>
     <div class="parallax"><img src="images/wall_street.jpg" alt="Wall street parallax"></div>

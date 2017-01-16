@@ -17,6 +17,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+
 </head>
 <body class = "all-style">
 
@@ -24,32 +28,49 @@
   <header class="l-header" role="banner">
     <nav class="header-color all-style" role="navigation">
       <div class="nav-wrapper container">
-        <!-- logo-container -->
-        <a id="logo-container" href="index.html" class="brand-logo left">
-        <img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
+
+        <!-- Algora logo applies for both mobile and desktop viewing --> 
+        <a id="logo-container" href="index.html" class="brand-logo left"><img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
+
+        <!-- logo-container for full-page desktop viewing. Includes tooltips when hovering -->
         <ul class="right hide-on-med-and-down">
-          <!-- news_nav -->
-          <li id="news_nav"><a href="about_us.html"><i class="material-icons">trending_up</i></a></li>
+
+          <!-- Adding these pages later on:
+          news_nav
+          <li class="tooltip newstip" data-title="News" id="news_nav"><a href="about_us.html"><i class="material-icons">trending_up</i></a></li>
+          account_nav
+          <li class="tooltip communitytip" data-title="Community" id="account_nav"><a href="account_login.html"><i class="material-icons">group</i></a></li>
+          -->
+
           <!-- blog_nav -->
-          <li id="blog_nav"><a href="blog.html"><i class="material-icons">forum</i></a></li>
+          <li class="tooltip blogtip" data-title="Blog" id="blog_nav"><a href="blog.html"><i class="material-icons">forum</i></a></li>
           <!-- about_nav -->
-          <li id="about_nav"><a href="about_us.html"><img id="algora-logo" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20"></a></li>
-          <!-- account_nav -->
-          <li id="account_nav"><a href="account_login.html"><i class="material-icons">person</i></a></li>
+          <li class="tooltip abouttip" data-title="About" id="about_nav"><a href="about_us.html"><img id="algora-logo" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20"></a></li>
+          
         </ul>
 
         <!-- nav-mobile side-nav for mobile devices -->
         <ul id="nav-mobile" class="side-nav">
-          <!-- about_nav -->
+          
+          <!-- Adding these pages later on:
+          about_nav
           <li id="about_nav"><a href="about_us.html">News<i class="material-icons left trending_up">trending_up</i></a></li>
+          account_nav
+          <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">group</i></a></li> 
+          -->
+
+          <!-- home_nav for menu popout -->
+          <li id="home_nav"><a href="index.html">Home<i class="material-icons left">home</i></a></li>
           <!-- blog_nav -->
           <li id="blog_nav"><a href="blog.html">Blog<i class="material-icons left">forum</i></a></li>
-          <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
-          <!-- account_nav -->
-          <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">person</i></a></li>
+          <!-- about_nav --> 
+          <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_blue.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
+
         </ul>
 
+        <!-- Mobile menu_nav --> 
         <a href="#" id="menu_nav" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+
       </div>
     </nav>
   </header>
@@ -108,7 +129,7 @@
     </div>
   
 
-    <!-- footer contains social media and copyright -->
+  <!-- footer contains social media and copyright -->
   <footer class="page-footer blue lighten-1">
     <!-- social media links -->
     <div class="col l12 s4 center">
@@ -129,10 +150,22 @@
   </footer>
 
 
-  <!--  Scripts-->
+
+
+
+
+  <!-- scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="charts.js"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <!-- <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> -->
+
 
   </body>
 </html>

@@ -1,13 +1,72 @@
 /* Custom Stylesheet */
 /* materialize colors: http://materializecss.com/color.html */
 
+/* ========================================================== */
+/* univseral styles */
 
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
 
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+/* Applies to all style components on pages, unless overridden below */
+.all-style{
+  font-family: roboto; 
+}
+
+#algora-banner{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* ========================================================== */
+/* header navbar section applies to all header navbar buttons */
+
+.header-color{
+  background-color: #0091EA;
+}
+
+/* Only applies to mobile menu popout */
+
+#algora-logo{
+  margin-bottom: -4px;
+}
+
+#algora-logo-side-nav{
+  margin-bottom: -4px;
+  margin-right: 30px;
+}
+
+#logo-container{
+  padding: 0 20px;
+}
+#logo-container:hover{
+  background-color: #2196f3;
+}
+
+/* Mobile nav style */
+#nav-mobile{
+  background-color: #2196f3;
+}
+
+#home_nav:hover{
+  background-color: #2196f3;
+}
+
+/* Desktop nav style/tooltips */
 
 /* setup tooltips */
 .tooltip {
   position: relative;
 }
+
 .tooltip:before,
 .tooltip:after {
   display: block;
@@ -16,20 +75,13 @@
   position: absolute;
 }
 
-
-.tooltip.newstip:after {
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #00c853; 
-  border-left: 10px solid transparent;
-  content: '';
-  height: 0;
-  top: 64px;
-  left: 0;
-  width: 0;
+/* blog_nav hover/tooltip style */
+#blog_nav:hover{
+  background-color: #448aff;
 }
 
-.tooltip.newstip:before {
-  background: #00c853;
+.tooltip.blogtip:before {
+  background: #448aff;
   color: #fff;
   content: attr(data-title);
   font-size: 26px;
@@ -37,7 +89,6 @@
   top: 74px;
   white-space: nowrap;
 }
-
 
 .tooltip.blogtip:after {
   border-right: 10px solid transparent;
@@ -50,8 +101,13 @@
   width: 0;
 }
 
-.tooltip.blogtip:before {
-  background: #448aff;
+/* about_nav hover/tooltip style */
+#about_nav:hover{
+  background-color: #2979ff;
+}
+
+.tooltip.abouttip:before {
+  background: #2979ff;
   color: #fff;
   content: attr(data-title);
   font-size: 26px;
@@ -71,8 +127,38 @@
   width: 0;
 }
 
-.tooltip.abouttip:before {
-  background: #2979ff;
+/* fade animation for tooltips*/
+.tooltip:after,
+.tooltip:before {
+  transform: translate3d(0,-10px,0);
+  transition: all .2s ease-in-out;
+}
+
+.tooltip:hover:after,
+.tooltip:hover:before {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+/* Adding pages later on: 
+
+#news_nav:hover{
+  background-color: #00c853;
+}
+
+.tooltip.newstip:after {
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #00c853; 
+  border-left: 10px solid transparent;
+  content: '';
+  height: 0;
+  top: 64px;
+  left: 0;
+  width: 0;
+}
+
+.tooltip.newstip:before {
+  background: #00c853;
   color: #fff;
   content: attr(data-title);
   font-size: 26px;
@@ -102,99 +188,15 @@
   white-space: nowrap;
 }
 
-
-/* the animations */
-/* fade */
-.tooltip:after,
-.tooltip:before {
-  transform: translate3d(0,-10px,0);
-  transition: all .2s ease-in-out;
-}
-.tooltip:hover:after,
-.tooltip:hover:before {
-  opacity: 1;
-  transform: translate3d(0,0,0);
-}
-
-
-
-
-
-
-
-
-
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
-p {
-  line-height: 2rem;
-}
-
-.button-collapse {
-  color: #26a69a;
-}
-
-.all-style{
-  font-family: roboto;
-  
-}
-
-#algora-banner{
-  background-color: rgba(255, 255, 255, 0);
-}
-/* header navbar section applies 
-to all header navbar buttons */
-
-.header-color{
-  background-color: #0091EA;
-
-}
-
-#news_nav:hover{
-  background-color: #00c853;
-}
-
-#blog_nav:hover{
-  background-color: #448aff;
-}
-
 #account_nav:hover{
   background-color: #2962ff;
 }
-
-#algora-logo{
-  margin-bottom: -4px;
-}
+*/
 
 
-#algora-logo-side-nav{
-  margin-bottom: -4px;
-  margin-right: 30px;
-}
+/* ====================================================== */
+/* body icon section applies to all header navbar buttons */
 
-#about_nav:hover{
-  background-color: #2979ff;
-}
-
-
-#logo-container{
-  padding: 0 20px;
-}
-#logo-container:hover{
-  background-color: #2196f3;
-}
-
-#nav-mobile{
-  background-color: #2196f3;
-}
-
-
-
-/* body icon section */
 .ct-chart .ct-series .ct-line {
   stroke: #2196f3;
   stroke-width: 2px;
@@ -205,7 +207,6 @@ to all header navbar buttons */
   stroke: #2196f3;
 }
 
-
 #header-achievements{
   outline-style:solid;
   outline-color: #2196f3;
@@ -214,9 +215,8 @@ to all header navbar buttons */
   font-family: ailerons;
 }
 
-
 .div-ext{
-  margin: 20px 30px 20px 20px ; */
+  margin: 50px 30px 20px 20px ; */
 }
 
 .js-chart{
@@ -224,15 +224,22 @@ to all header navbar buttons */
   padding-left: 40px;
 }
 
+
 .info-container{
+  margin-top: 80px;
   -webkit-transition: .5s; /* Safari */
   transition: .5s;
   transition-timing-function: ease-out;
   -webkit-transition-timing-function: ease-out;
 }
 
+.row{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .info-container:hover{
-  margin-top: -30px;
+  margin-top: 50px;
 }
 
 .icon-block{
@@ -241,12 +248,22 @@ to all header navbar buttons */
   color: black;
 }
 
+
+.img-circle {
+    border-radius: 50%;
+
+    height: 100px;
+    width: 100px;
+}
+
+
 .nav-wrapper {
   font-family: ailerons;
 }
 
+
 .parallax-container {
-  min-height: 380px;
+  min-height: 600px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -255,7 +272,6 @@ to all header navbar buttons */
 .parallax-container .section {
   width: 100%;
 }
-
 
 
 .l-main-title{
@@ -281,7 +297,7 @@ to all header navbar buttons */
 }
 
 .icon-block {
-  padding: 0 15px;
+  padding: 5px 15px 10px 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
@@ -302,6 +318,4 @@ to all header navbar buttons */
 footer.page-footer {
   margin: 0;
 }
-
-
 
