@@ -254,9 +254,12 @@ p {
 
     height: 100px;
     width: 100px;
+    margin: 15px 0 0 10px;
 }
 
-
+.team-container{
+  margin: 20px 0;
+}
 .nav-wrapper {
   font-family: ailerons;
 }
