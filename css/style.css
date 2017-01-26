@@ -19,7 +19,9 @@ p {
 
 /* Applies to all style components on pages, unless overridden below */
 .all-style{
-  font-family: roboto; 
+  font-family: sans-serif; 
+  font-weight: 300;
+  background-color: #f9f9f9;
 }
 
 #algora-banner{
@@ -231,6 +233,10 @@ p {
   transition: .5s;
   transition-timing-function: ease-out;
   -webkit-transition-timing-function: ease-out;
+  background-color: white;
+  box-shadow: 5px 5px 0 #e0e0e0;
+  color: black;
+
 }
 
 .row{
@@ -240,14 +246,26 @@ p {
 
 .info-container:hover{
   margin-top: 50px;
-}
-
-.icon-block{
-  outline-style:solid;
-  outline-color: #2196f3;
+  background-color: white;
+  box-shadow: 15px 15px 0 rgb(235,235,235);
   color: black;
 }
 
+.icon-block{
+  background-color: white;
+  box-shadow: 5px 5px 0 #e0e0e0;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+
+.icon-block:hover {
+  background-color: white;
+  box-shadow: 15px 15px 0 rgb(235,235,235);
+  color: black;
+}
 
 .img-circle {
     border-radius: 50%;
@@ -322,3 +340,29 @@ footer.page-footer {
   margin: 0;
 }
 
+#square-chart {
+   
+  display: block; 
+  height: 100%; 
+  width: 120%;
+  
+}
+
+.our-mission {
+  margin: 50px; 
+  padding: 0; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+.our-team {
+  margin: 50px; 
+  padding: 0; 
+  height: 400px; 
+  overflow: hidden;
+}
+
+.prop-trading {
+  margin: 50px; 
+  padding: 20px; 
+}
