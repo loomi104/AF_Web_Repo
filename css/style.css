@@ -19,9 +19,13 @@ p {
 
 /* Applies to all style components on pages, unless overridden below */
 .all-style{
+<<<<<<< HEAD
   font-family: sans-serif; 
   font-weight: 300;
   background-color: #f9f9f9;
+=======
+  font-family: georgia; 
+>>>>>>> 5c816bfbb66ff3368fa78540dd0a5d1d484ef30b
 }
 
 #algora-banner{
