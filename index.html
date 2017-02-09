@@ -28,7 +28,6 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <!-- CSS/JS --> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
@@ -36,19 +35,15 @@
 </head>
 
 <!-- Applies all-style class tag to all body items --> 
-<body class = "all-style">
-
+<body class = "all-style" style="min-width: 350px;">
   <!-- header stays the same between all .html pages -->
   <header class="l-header" role="banner">
     <nav class="header-color all-style" role="navigation">
       <div class="nav-wrapper container">
-
         <!-- Algora logo applies for both mobile and desktop viewing --> 
         <a id="logo-container" href="index.html" class="brand-logo left"><img src="images/algora_logo_white.png" alt="Algora logo" width="26" height="20"> Algora Finance</a>
-
         <!-- logo-container for full-page desktop viewing. Includes tooltips when hovering -->
         <ul class="right hide-on-med-and-down">
-
           <!-- Adding these pages later on:
           news_nav
           <li class="tooltip newstip" data-title="News" id="news_nav"><a href="about_us.html"><i class="material-icons">trending_up</i></a></li>
@@ -62,10 +57,8 @@
           <li class="tooltip abouttip" data-title="About" id="about_nav"><a href="about_us.html"><img id="algora-logo" src="images/algora_logo_white.png" alt="Algora logo" width="25.8" height="20"></a></li>
           
         </ul>
-
         <!-- nav-mobile side-nav for mobile devices -->
         <ul id="nav-mobile" class="side-nav">
-          
           <!-- Adding these pages later on:
           about_nav
           <li id="about_nav"><a href="about_us.html">News<i class="material-icons left trending_up">trending_up</i></a></li>
@@ -79,23 +72,21 @@
           <li id="blog_nav"><a href="blog.html">Blog<i class="material-icons left">forum</i></a></li>
           <!-- about_nav --> 
           <li id="about_nav"><a href="about_us.html"><img id="algora-logo-side-nav" src="images/algora_logo_blue.png" alt="Algora logo" width="25.8" height="20">About Us</a></li>
-
         </ul>
-
         <!-- Mobile menu_nav --> 
         <a href="#" id="menu_nav" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
-
       </div>
     </nav>
   </header>
 
+
   <div class="container">
     <div style="font-family: ailerons; padding-top: 50px;">
-      <h5 class="center"><font size="50">VISIONARY ACHIEVEMENTS</font></h5>
-      <p class="center"><font size="6">Our key achievements</font></p>
+      <h5 class="center"><font size="50">OUR VISIONARY ACHIEVEMENTS</font></h5>
     </div>
   </div>
 
+  <!-- js-chart - need to add in tooltips for achievement dates later -->
   <div class="js-chart">
     <div class="ct-chart ct-perfect-fourth" style="min-width: 310px; height:400px; margin: 0 auto;"></div>
   </div>
@@ -104,35 +95,30 @@
 
   <div class="container block-container">
     <div class="section">
-      
-    
-      <!--   Icon Section   -->
+      <!--   Icon Section - material-icons link: https://material.io/icons/  -->
       <div class="row">
-        <div class="col s12 m4">
+
+        <div class="col s12 m10 l4">
           <a href="#">
             <div class="icon-block info-container">
-              
-              <!-- material-icons link: https://material.io/icons/ -->
               <h2 class="center green-text"><i class="material-icons">trending_up</i></h2>
               <h5 class="center">Steady Returns</h5>
-
               <p class="light center">While many investors fail to stay consistent in their strategy, our approach yields consistent, stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and finally deploying new strategies to sustain this performance in the long term.</p>
             </div>
           </a>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m10 l4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center blue-text"><i class="material-icons">group</i></h2>
               <h5 class="center">Community</h5>
-
               <p class="light center">We believe that collaboration leads to outstanding performance, so we work directly with members our community to theorize, create and test cutting-edge investment strategies. We yearn to create a culture centered around learning and curiosity to achieve this goal.</p>
             </div>
           </a>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m10 l4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center black-text"><i class="material-icons">code</i></h2>
@@ -200,10 +186,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
 
 
   <!-- scripts -->
