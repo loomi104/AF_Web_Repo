@@ -229,7 +229,6 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 */
 
 
-
 /* ===================================================== */
 /* Everything below is not organized/commented */
 
@@ -262,11 +261,6 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
   color: black;
 }
 
-.row{
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 .info-container:hover{
   margin-top: 50px;
   margin-bottom: 20px;
@@ -289,37 +283,79 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 .icon-block:hover {
   background-color: white;
   box-shadow: 10px 20px 0 rgb(235,235,235);
+  color: black;
+}
 
+.icon-block-shadow {
+  background-color: white;
+  box-shadow: 5px 5px 5px #e0e0e0;
   color: black;
 }
 
 .img-circle {
     border-radius: 50%;
-
     height: 100px;
     width: 100px;
     margin: 15px 0 0 10px;
 }
 
+#exec-profile {
+  border-radius: 50%;
+  margin: auto;
+  height: 75%;
+  width: 75%;
+}
+
+.our-mission {
+  padding: 0; 
+  overflow: hidden;
+}
+
+#mission-container {
+  border-radius: 50%;
+  margin: auto;
+  height: 75%;
+  width: 75%;
+}
+
+.our-team {
+  margin: 50px; 
+  padding: 0; 
+  overflow: hidden;
+}
+
+.prop-trading {
+  margin: 50px; 
+  padding: 20px; 
+}
+
 .team-container{
   margin: 20px 0;
 }
+
 .nav-wrapper {
   font-family: ailerons;
 }
 
 
 .parallax-container {
-  min-height: 600px;
+  min-height: 400px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
 
+.parallax-container#about_us_cover {
+  min-height: 250px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+
 .parallax-container .section {
   width: 100%;
 }
-
 
 .l-main-title{
   text-align: center;
@@ -346,6 +382,7 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 .icon-block {
   padding: 5px 15px 10px 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -366,28 +403,27 @@ footer.page-footer {
   margin: 0;
 }
 
-#square-chart {
-   
-  display: block; 
-  height: 100%; 
-  width: 120%;
-  
+
+
+
+
+
+
+#marqueeborder {
+  color: white;
+  background-color: #000000;
+  font-family:"Lucida Console", Monaco, monospace;
+  position:relative;
+  height:20px; 
+  overflow:hidden;
+  font-size: 0.7em;
 }
 
-.our-mission {
-  padding: 0; 
-  height: 300px; 
-  overflow: hidden;
+#marqueecontent {
+  position:absolute;
+  left:0px;
+  line-height:20px;
+  white-space:nowrap;
 }
 
-.our-team {
-  margin: 50px; 
-  padding: 0; 
-  height: 400px; 
-  overflow: hidden;
-}
 
-.prop-trading {
-  margin: 50px; 
-  padding: 20px; 
-}

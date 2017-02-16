@@ -6,7 +6,7 @@
 <!-- clean blog example: https://blackrockdigital.github.io/startbootstrap-clean-blog/post.html -->
 <!-- parallax example: http://pixelcog.github.io/parallax.js/ -->
 <!-- Antimated tooltips with html and css: http://codepen.io/runnabro/pen/imeHn/ -->
-
+<!-- stock ticker marquee: http://blog.shanock.com/simple-php-stock-ticker-and-javascript-marquee-for-valid-xhtml/ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +80,8 @@
       </div>
     </nav>
   </header>
-
+  
+  
 
   <div class="container">
     <div style="font-family: ailerons; padding-top: 50px;">
@@ -93,39 +94,43 @@
     <div class="ct-chart ct-perfect-fourth" style="min-width: 310px; height:400px; margin: 0 auto;"></div>
   </div>
   
+
   <hr class="div-ext">
 
-  <div class="container block-container">
+
+  <div class="container">
     <div class="section">
       <!--   Icon Section - material-icons link: https://material.io/icons/  -->
       <div class="row">
 
-        <div class="col s12 m10 l4">
+        <div class="col s12 m12 l4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center green-text"><i class="material-icons">trending_up</i></h2>
               <h5 class="center">Steady Returns</h5>
-              <p class="light center">While many investors fail to stay consistent in their strategy, our approach yields consistent, stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and finally deploying new strategies to sustain this performance in the long term.</p>
+              <!-- 285 characters -->
+              <p class="light center">While many investors fail to stay consistent in their strategy, our approach yields consistent, stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and later deploying new strategies to sustain this performance for the long term.</p>
             </div>
           </a>
         </div>
 
-        <div class="col s12 m10 l4">
+        <div class="col s12 m12 l4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center blue-text"><i class="material-icons">group</i></h2>
               <h5 class="center">Community</h5>
+              <!-- 265 characters -->
               <p class="light center">We believe that collaboration leads to outstanding performance, so we work directly with members our community to theorize, create and test cutting-edge investment strategies. We yearn to create a culture centered around learning and curiosity to achieve this goal.</p>
             </div>
           </a>
         </div>
 
-        <div class="col s12 m10 l4">
+        <div class="col s12 m12 l4">
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center black-text"><i class="material-icons">code</i></h2>
               <h5 class="center">Algo Trading</h5>
-
+              <!-- 267 characters -->
               <p class="light center">Automation has fundamentally changed the landscape of investing, so we’ve invested time and money into developing and implementing state-of-the-art algo-trading systems. We are constantly researching unique approaches to add to our successful portfolio of strategies.</p>
             </div>
           </a>
@@ -139,7 +144,7 @@
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="row center">
-        <h5 class="header col s12" style="font-size:50px;" >Invest in your future</h5>
+        <h5 class="header col s12" style="font-size:50px;">Invest in your future</h5>
       </div>
     </div>
     <div class="parallax"><img src="images/stockchart_background.jpg" alt="Stock chart parallax"></div>
@@ -148,7 +153,7 @@
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div class="row icon-block-shadow">
         <div class="col s12 center">
           <h4>Contact Us</h4>
           <p class="left-align light">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
@@ -167,8 +172,45 @@
     </div>
     <div class="parallax"><img src="images/wall_street.jpg" alt="Wall street parallax"></div>
   </div>
+  
+  <!-- 
 
+  scrolling marque stock banner. css is active - will add this to separate page later
+  <script type="text/javascript">
+    // Original script by Walter Heitman Jr, first published on http://techblog.shanock.com
+    // Set an initial scroll speed. This equates to the number of pixels shifted per tick
+    var scrollspeed=2;
+    var pxptick=scrollspeed;
+    function startmarquee(){
+      // Make a shortcut referencing our div with the content we want to scroll
+      marqueediv=document.getElementById("marqueecontent");
+      // Get the total width of our available scroll area
+      marqueewidth=document.getElementById("marqueeborder").offsetWidth;
+      // Get the width of the content we want to scroll
+      contentwidth=marqueediv.offsetWidth;
+      // Start the ticker at 50 milliseconds per tick, adjust this to suit your preferences
+      // Be warned, setting this lower has heavy impact on client-side CPU usage. Be gentle.
+      setInterval("scrollmarquee()",50);
+    }
+    function scrollmarquee(){
+      // Check position of the div, then shift it left by the set amount of pixels.
+      if (parseInt(marqueediv.style.left)>(contentwidth*(-1)))
+        marqueediv.style.left=parseInt(marqueediv.style.left)-pxptick+"px";
+      // If it's at the end, move it back to the right.
+      else
+        marqueediv.style.left=parseInt(marqueewidth)+"px";
+    }
+    window.onload=startmarquee;
+  </script>
 
+  <div id="marqueeborder" onmouseover="pxptick=0" onmouseout="pxptick=scrollspeed">
+    <div id="marqueecontent">
+      AMD NVDA AAPL DOW 
+    </div>
+  </div>
+  
+  -->
+  
   <!-- footer contains social media and copyright -->
   <footer class="page-footer blue lighten-1">
     <!-- social media links -->
