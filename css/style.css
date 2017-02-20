@@ -246,8 +246,8 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 
 
 
-.col{
-  resize: vertical;
+.row{
+  height: auto;
 }
 
 .info-container{
@@ -259,6 +259,7 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
   background-color: white;
   box-shadow: 5px 5px 0 #e0e0e0;
   color: black;
+
 }
 
 .info-container:hover{
@@ -277,6 +278,7 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
   transition: .5s;
   transition-timing-function: ease-out;
   -webkit-transition-timing-function: ease-out;
+  height: 100%;
 }
 
 
@@ -301,9 +303,16 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 
 #exec-profile {
   border-radius: 50%;
-  margin: auto;
+  margin-top: auto;
+  margin-top: auto;
   height: 75%;
   width: 75%;
+
+}
+
+.exec-col{
+  display: inline-block;
+  align-items: center;
 }
 
 .our-mission {
