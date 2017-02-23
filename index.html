@@ -1,12 +1,23 @@
-<!-- http://demo.geekslabs.com/materialize/v3.1/ui-alerts.html -->
-<!-- http://www.highcharts.com/ -->
-<!-- material design: https://material.io/guidelines/material-design/introduction.html -->
-<!-- cd "Google Drive"/"Algora Finance"/Code/"Web Development"/AF_Web_Repo -->
-<!-- highcharts video tutorial: https://www.youtube.com/watch?v=FchJYk0OF2U -->
-<!-- clean blog example: https://blackrockdigital.github.io/startbootstrap-clean-blog/post.html -->
-<!-- parallax example: http://pixelcog.github.io/parallax.js/ -->
-<!-- Antimated tooltips with html and css: http://codepen.io/runnabro/pen/imeHn/ -->
-<!-- stock ticker marquee: http://blog.shanock.com/simple-php-stock-ticker-and-javascript-marquee-for-valid-xhtml/ -->
+<!-- 
+
+The following resources were used in the production of this website. 
+  http://demo.geekslabs.com/materialize/v3.1/ui-alerts.html
+  http://www.highcharts.com/
+  material design: https://material.io/guidelines/material-design/introduction.html
+  cd "Google Drive"/"Algora Finance"/Code/"Web Development"/AF_Web_Repo 
+  highcharts video tutorial: https://www.youtube.com/watch?v=FchJYk0OF2U
+  clean blog example: https://blackrockdigital.github.io/startbootstrap-clean-blog/post.html
+  parallax example: http://pixelcog.github.io/parallax.js/
+  Antimated tooltips with html and css: http://codepen.io/runnabro/pen/imeHn/
+  stock ticker marquee: http://blog.shanock.com/simple-php-stock-ticker-and-javascript-marquee-for-valid-xhtml/ 
+
+Website programmed with the help of Stack Overflow, Web3 Schools, and friends. 
+
+Kyle Loomis
+CEO, Algora Finance
+
+-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +42,12 @@
   <!-- CSS/JS --> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
 
 </head>
 
 <!-- Applies all-style class tag to all body items --> 
-<body class = "all-style" style="min-width: 350px;">
+<body class="all-style">
 
 
   <!-- header stays the same between all .html pages -->
@@ -67,8 +79,9 @@
           account_nav
           <li id="account_nav"><a href="account_login.html">Account<i class="material-icons">group</i></a></li> 
           -->
-
+          
           <!-- home_nav for menu popout -->
+
           <li id="home_nav"><a href="index.html">Home<i class="material-icons left">home</i></a></li>
           <!-- blog_nav -->
           <li id="blog_nav"><a href="blog.html">Blog<i class="material-icons left">forum</i></a></li>
@@ -84,8 +97,8 @@
   
 
   <div class="container">
-    <div style="font-family: ailerons; padding-top: 50px;">
-      <h5 class="center"><font size="50">OUR VISIONARY ACHIEVEMENTS</font></h5>
+    <div class="h1Alierons50px" style="padding-top: 50px;">
+      <h1 class="center">OUR VISIONARY ACHIEVEMENTS</h1>
     </div>
   </div>
 
@@ -107,7 +120,7 @@
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center green-text"><i class="material-icons">trending_up</i></h2>
-              <h5 class="center" style="font-family: ailerons; font-size: 30px;">Steady Returns</h5>
+              <h5 class="center h2Alierons30px">Steady Returns</h5>
               <!-- 285 characters -->
               <p class="light center">While many investors fail to stay consistent in their strategy, our approach yields consistent, stellar returns while simultaneously minimizing risk. We our constantly theorizing, backtesting, refining, and later deploying new strategies to sustain this performance for the long term.</p>
             </div>
@@ -118,7 +131,7 @@
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center" style="font-family: ailerons; font-size: 30px;">Community</h5>
+              <h5 class="center h2Alierons30px">Community</h5>
               <!-- 265 characters -->
               <p class="light center">We believe that collaboration leads to outstanding performance, so we work directly with members our community to theorize, create and test cutting-edge investment strategies. We yearn to create a culture centered around learning and curiosity to achieve this goal.</p>
             </div>
@@ -129,7 +142,7 @@
           <a href="#">
             <div class="icon-block info-container">
               <h2 class="center black-text"><i class="material-icons">code</i></h2>
-              <h5 class="center" style="font-family: ailerons; font-size: 30px;">Algo Trading</h5>
+              <h5 class="center h2Alierons30px">Algo Trading</h5>
               <!-- 267 characters -->
               <p class="light center">Automation has fundamentally changed the landscape of investing, so we’ve invested time and money into developing and implementing state-of-the-art algo-trading systems. We are constantly researching unique approaches to add to our successful portfolio of strategies.</p>
             </div>
@@ -144,7 +157,7 @@
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="row center">
-        <h5 class="header col s12" style="font-size:50px; font-family: ailerons;">Invest in your future</h5>
+        <h1 class="header col s12 h1Alierons50px">Invest in your future</h1>
       </div>
     </div>
     <div class="parallax"><img src="images/stockchart_background.jpg" alt="Stock chart parallax"></div>
@@ -155,7 +168,7 @@
 
       <div class="row icon-block-shadow">
         <div class="col s12 center">
-          <h4 style="font-family: ailerons; ">Contact Us</h4>
+          <h1 class="h1Alierons50px">Contact Us</h1>
           <p class="left-align light">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
         </div>
       </div>
@@ -167,7 +180,7 @@
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="row center">
-        <h5 class="header col s12" style="font-size:50px; font-family: ailerons;">Learn through collaboration</h5>
+        <h1 class="header col s12 h1Alierons50px">Learn through collaboration</h1>
       </div>
     </div>
     <div class="parallax"><img src="images/wall_street.jpg" alt="Wall street parallax"></div>

@@ -1,8 +1,32 @@
 // Animated progress chart using javascript
 // Link: http://gionkunz.github.io/chartist-js/index.html
 
+
+/*
 var chart = new Chartist.Line('.ct-chart', {
-  labels: ['Apr','', '', '', 'Aug', 'Sep', '','Nov','Dec','Jan'],
+  labels: [1, 2, 3],
+  series: [
+    [
+      {meta: 'description', value: 1 },
+      {meta: 'description', value: 5},
+      {meta: 'description', value: 3}
+    ]
+  ]
+}, {
+  low: 0,
+  high: 8,
+  fullWidth: true,
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
+});
+*/
+
+
+
+var chart = new Chartist.Line('.ct-chart', {
+  /*
+  labels: ['Apr','--', '--', '--', 'Aug', 'Sep', '--','Nov','Dec','Jan'],
 
   // Apr = Executed First trade on the market 
   // Aug = Switched to Interactive Brokers
@@ -13,15 +37,30 @@ var chart = new Chartist.Line('.ct-chart', {
   series: [
     [1,,,,2, 4,,7, 10, 16]
   ]
-}, {
-  axisY: {
-    high: 24,
-    low: 0,
-    type: Chartist.FixedScaleAxis,
-    divisor: 6,
+  */
 
-  }
+  labels: ['Apr','--', '--', '--', 'Aug', 'Sep', '--','Nov','Dec','Jan'],
+  series: [
+    [
+      {meta: 'description', value: 1},,,,
+      {meta: 'description', value: 2},
+      {meta: 'description', value: 4},,
+      {meta: 'description', value: 7},
+      {meta: 'description', value: 10},
+      {meta: 'description', value: 16}
+    ]
+  ]
+}, {
+    low: 0,
+    high: 24,
+    divisor: 12,
+    
+    type: Chartist.FixedScaleAxis,
+    plugins: [
+      Chartist.plugins.tooltip()
+    ]
 });
+
 
 // Let's put a sequence number aside so we can use it in the event callbacks
 var seq = 0,
@@ -129,4 +168,5 @@ chart.on('draw', function(data) {
     data.element.animate(animations);
   }
 });
+
 

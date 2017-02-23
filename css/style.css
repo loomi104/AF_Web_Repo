@@ -1,8 +1,10 @@
-/* Custom Stylesheet */
+/* Custom Stylesheet for all static pages */
 /* materialize colors: http://materializecss.com/color.html */
+
 
 /* ========================================================== */
 /* univseral styles */
+
 
 nav ul a,
 nav .brand-logo {
@@ -17,15 +19,78 @@ p {
   color: #26a69a;
 }
 
-/* Applies to all style components on pages, unless overridden below */
-.all-style{
+.all-style {
+  background-color: #f9f9f9;
   font-family: sans-serif; 
   font-weight: 300;
-  background-color: #f9f9f9;
+  min-width: 350px;
+  font-size: 18px;
 }
 
-#algora-banner{
+#algora-banner {
   background-color: rgba(255, 255, 255, 0);
+}
+
+.row{
+  height: auto;
+}
+
+.h1Alierons50px{
+  font-size: 50px;  
+  font-weight: 300; 
+  font-family: ailerons;
+}
+
+.h2Alierons30px {
+  font-size: 35px;
+  font-weight: 300; 
+  font-family: ailerons;
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container#about_us_cover {
+  min-height: 250px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.div-ext{
+  margin: 50px 30px 20px 20px; 
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 100px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 5px 15px 10px 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
 /* ========================================================== */
@@ -36,7 +101,7 @@ p {
 }
 
 /* for about_us white algora logo in desktop form */
-#algora-logo{
+#algora-logo {
   margin-bottom: -4px;
 }
 
@@ -58,7 +123,8 @@ p {
   padding: 0 20px;
 }
 
-/* mobile menu popout background color - same as background color .header-color */
+/* mobile menu popout background color - 
+same as background color .header-color */
 #nav-mobile{
   background-color: #0091EA;
 }
@@ -68,6 +134,15 @@ p {
   background-color: #448aff;
 }
 
+/* blog_nav hover/tooltip style */
+#blog_nav:hover{
+  background-color: #448aff;
+}
+
+/* about_nav hover/tooltip style */
+#about_nav:hover{
+  background-color: #448aff;
+}
 
 /* Desktop nav style/tooltips */
 /* setup tooltips */
@@ -81,11 +156,6 @@ p {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-}
-
-/* blog_nav hover/tooltip style */
-#blog_nav:hover{
-  background-color: #448aff;
 }
 
 .tooltip.blogtip:before {
@@ -107,11 +177,6 @@ p {
   top: 64px;
   left: 0;
   width: 0;
-}
-
-/* about_nav hover/tooltip style */
-#about_nav:hover{
-  background-color: #448aff;
 }
 
 .tooltip.abouttip:before {
@@ -148,62 +213,9 @@ p {
   transform: translate3d(0,0,0);
 }
 
-/* Adding pages later on: 
-
-#news_nav:hover{
-  background-color: #00c853;
-}
-
-.tooltip.newstip:after {
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #00c853; 
-  border-left: 10px solid transparent;
-  content: '';
-  height: 0;
-  top: 64px;
-  left: 0;
-  width: 0;
-}
-
-.tooltip.newstip:before {
-  background: #00c853;
-  color: #fff;
-  content: attr(data-title);
-  font-size: 26px;
-  padding: 0 10px;
-  top: 74px;
-  white-space: nowrap;
-}
-
-.tooltip.communitytip:after {
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #2962ff; 
-  border-left: 10px solid transparent;
-  content: '';
-  height: 0;
-  top: 64px;
-  left: 0;
-  width: 0;
-}
-
-.tooltip.communitytip:before {
-  background: #2962ff;
-  color: #fff;
-  content: attr(data-title);
-  font-size: 26px;
-  padding: 0 10px;
-  top: 74px;
-  white-space: nowrap;
-}
-
-#account_nav:hover{
-  background-color: #2962ff;
-}
-*/
-
 
 /* ====================================================== */
-/* body icon section applies to all header navbar buttons */
+/* body icon section applies to all index.html components */
 
 /* js-chartist line color/width */
 .ct-chart .ct-series .ct-line {
@@ -218,36 +230,8 @@ p {
 
 /* padding on js-chart */
 .js-chart{
-  padding-right: 40px;
   padding-left: 40px;
-}
-
-/* testing out how to color specific points on the chart... 
-ct-chart .ct-series .ct-point[ct\:value="1"] {
-    stroke: red;
-}
-*/
-
-
-/* ===================================================== */
-/* Everything below is not organized/commented */
-
-#header-achievements{
-  outline-style:solid;
-  outline-color: #2196f3;
-  padding: 30px;
-  margin-top: 30px;
-  font-family: ailerons;
-}
-
-.div-ext{
-  margin: 50px 30px 20px 20px; 
-}
-
-
-
-.row{
-  height: auto;
+  padding-right: 40px;
 }
 
 .info-container{
@@ -263,11 +247,11 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
 }
 
 .info-container:hover{
-  margin-top: 50px;
-  margin-bottom: 20px;
   background-color: white;
   box-shadow: 15px 5px 0 rgb(235,235,235);
   color: black;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .icon-block{
@@ -281,12 +265,17 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
   height: 100%;
 }
 
-
 .icon-block:hover {
   background-color: white;
   box-shadow: 10px 20px 0 rgb(235,235,235);
   color: black;
 }
+
+
+
+/* ===================================================== */
+/* below contains css for about_us.html, etc*/
+
 
 .icon-block-shadow {
   background-color: white;
@@ -346,57 +335,13 @@ ct-chart .ct-series .ct-point[ct\:value="1"] {
   font-family: ailerons;
 }
 
-
-.parallax-container {
-  min-height: 400px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-
-.parallax-container#about_us_cover {
-  min-height: 250px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-
-
-.parallax-container .section {
-  width: 100%;
-}
-
 .l-main-title{
   text-align: center;
   font-size: 50px;
 }
 
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 100px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 5px 15px 10px 15px;
-}
-
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-
+/* ===================================================== */
 /* footer for social media and copyright */
 
 .list-inline li{
@@ -412,11 +357,10 @@ footer.page-footer {
   margin: 0;
 }
 
-
-
-
-
-
+/* ===================================================== */
+/* adding these components later on... */
+/*
+for marquee scrolling banner when it is later added
 
 #marqueeborder {
   color: white;
@@ -434,5 +378,58 @@ footer.page-footer {
   line-height:20px;
   white-space:nowrap;
 }
+*/
 
 
+/* Adding pages later on: 
+
+#news_nav:hover{
+  background-color: #00c853;
+}
+
+.tooltip.newstip:after {
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #00c853; 
+  border-left: 10px solid transparent;
+  content: '';
+  height: 0;
+  top: 64px;
+  left: 0;
+  width: 0;
+}
+
+.tooltip.newstip:before {
+  background: #00c853;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 26px;
+  padding: 0 10px;
+  top: 74px;
+  white-space: nowrap;
+}
+
+.tooltip.communitytip:after {
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #2962ff; 
+  border-left: 10px solid transparent;
+  content: '';
+  height: 0;
+  top: 64px;
+  left: 0;
+  width: 0;
+}
+
+.tooltip.communitytip:before {
+  background: #2962ff;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 26px;
+  padding: 0 10px;
+  top: 74px;
+  white-space: nowrap;
+}
+
+#account_nav:hover{
+  background-color: #2962ff;
+}
+*/
